@@ -11,7 +11,7 @@ public class Client {
 
         Subject subject = (Subject) new DynamicProxy().bind(realSubject);
 
-        System.out.println("是否是动态代理类: " + Proxy.isProxyClass(DynamicProxy.class));
+        System.out.println("是否是动态代理类: " + Proxy.isProxyClass(DynamicProxy.class));//false ???
         subject.sayHello("fuck jav");
     }
 }
