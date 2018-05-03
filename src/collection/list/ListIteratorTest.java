@@ -24,6 +24,7 @@ public class ListIteratorTest {
 
         iter.add("xiaobai");
 
+
         //遍历List元素
         System.out.println("遍历List中元素，方法一：");
         for(String str : staff)

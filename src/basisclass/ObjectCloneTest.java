@@ -28,18 +28,35 @@ class User implements Cloneable {
 
     @Override
     public String toString() {
-        return new String(this.age + this.address.toString());
+        return this.age + this.address.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null)
+            return false;
+        if (getClass()!=o.getClass())
+            return false;
+
+        User other = (User) o;
+        if (age==other.age && address.detail==other.address.detail )
+            return true;
+
+        return false;
     }
 }
 
 public class ObjectCloneTest {
     public static void main(String[] args) throws CloneNotSupportedException {
-        User u1 = new User(20);
-        User u2 = u1.clone();
 
-        System.out.println(u1 == u2);
-        System.out.println(u1.equals(u2));
-        System.out.println(u1);
-        System.out.println(u2);
+//        User u1 = new User(20);
+//        User u2 = u1.clone();
+//
+//        System.out.println(u1 == u2);
+//        System.out.println(u1.equals(u2));
+//        System.out.println(u1);
+//        System.out.println(u2);
     }
 }

@@ -2,7 +2,7 @@ package collection.set;
 
 import java.util.Collections;
 
-public class Person implements Comparable {
+public class Person implements Comparable{
     public int age;
     public int height;
 
@@ -42,4 +42,5 @@ public class Person implements Comparable {
         else
             return -1;
     }
+
 }

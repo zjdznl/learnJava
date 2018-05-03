@@ -13,6 +13,7 @@ public class TestLambda {
 
         List <Person> javaProgrammers = new ArrayList <Person>() {
             {
+
                 add(new Person("Elsdon", "Jaycob", "Java programmer", "male", 43, 2000));
                 add(new Person("Tamsen", "Brittany", "Java programmer", "female", 23, 1500));
                 add(new Person("Floyd", "Donny", "Java programmer", "male", 33, 1800));

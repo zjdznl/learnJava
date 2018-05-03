@@ -1,9 +1,6 @@
 package collection.list;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class RemoveListTest {
     public static void main(String[] args) {
@@ -14,6 +11,7 @@ public class RemoveListTest {
         Book book3 = new Book();
         book3.name = "Effective Java 1";
         List <Book> list = new ArrayList <Book>();
+
         list.add(book1);
 //        list.add(book2);
 //        list.add(book3);
@@ -21,6 +19,7 @@ public class RemoveListTest {
         System.out.println(list.size());
         list.remove(book2);
         System.out.println(list.size());
+
 
 
 

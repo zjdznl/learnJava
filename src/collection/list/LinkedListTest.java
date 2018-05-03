@@ -1,10 +1,6 @@
 package collection.list;
 
-import javax.sound.midi.Soundbank;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class LinkedListTest {
     public static void main(String[] args) {
@@ -60,9 +56,6 @@ public class LinkedListTest {
 
         System.out.println(list.removeLast());
         showList(list);
-
-
-
 
 
     }
